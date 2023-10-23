@@ -1,5 +1,9 @@
 # @rolludejo/web-internal
 
+本 repo 主要容纳 rolludejo 的下属项目（如 dicexp、rotext）的共用代码。
+
+注意：本 repo 的存在仅为上述项目内部使用，并不会考虑除此以外的兼容性问题。
+
 最初提取自 [rotext monorepo](https://github.com/umajho/rotext)
 [此次 commit](https://github.com/umajho/rotext/commit/7702a2947377d8e317e864ff447a8244d459a528)
 下的：

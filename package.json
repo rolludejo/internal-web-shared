@@ -1,0 +1,67 @@
+{
+  "name": "@rolludejo/web-internal",
+  "license": "MIT",
+  "author": "Umaĵo",
+  "contributors": [],
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "browser": {},
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./internal": "./internal.ts"
+  },
+  "typesVersions": {},
+  "scripts": {
+    "dev": "vite serve dev",
+    "build": "tsup",
+    "test": "concurrently pnpm:test:*",
+    "test:client": "vitest",
+    "test:ssr": "pnpm run test:client --mode ssr",
+    "prepublishOnly": "pnpm build",
+    "lint": "concurrently pnpm:lint:*",
+    "lint:types": "tsc --noEmit",
+    "update-deps": "pnpm up -Li"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "esbuild": "^0.18.20",
+    "esbuild-plugin-solid": "^0.5.0",
+    "esbuild-sass-plugin": "^2.16.0",
+    "jsdom": "^22.1.0",
+    "postcss": "^8.4.24",
+    "postcss-modules": "^6.0.0",
+    "sass": "^1.63.6",
+    "solid-js": "^1.7.8",
+    "tailwindcss": "^3.3.2",
+    "tsup": "^7.1.0",
+    "tsup-preset-solid": "^2.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6",
+    "vite-plugin-solid": "^2.7.0",
+    "vitest": "^0.33.0"
+  },
+  "keywords": [
+    "solid"
+  ],
+  "packageManager": "pnpm@8.6.12",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8.6.0"
+  }
+}

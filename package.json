@@ -41,7 +41,7 @@
     "esbuild": "^0.18.20",
     "esbuild-plugin-solid": "^0.5.0",
     "esbuild-sass-plugin": "^2.16.0",
-    "jsdom": "^22.1.0",
+    "jsdom": "^24.1.0",
     "postcss": "^8.4.39",
     "postcss-modules": "^6.0.0",
     "sass": "^1.77.6",

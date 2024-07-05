@@ -3,9 +3,6 @@ set fallback
 lint:
 	pnpm run lint
 
-test: lint
-	pnpm run test
-
 dev:
 	pnpm run dev
 

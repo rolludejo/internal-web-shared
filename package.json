@@ -36,24 +36,24 @@
     "update-deps": "pnpm up -Li"
   },
   "peerDependencies": {
-    "solid-js": "^1.8.1"
+    "solid-js": "^1.8.18"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "concurrently": "^8.2.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
     "esbuild": "^0.18.20",
     "esbuild-plugin-solid": "^0.5.0",
     "esbuild-sass-plugin": "^2.16.0",
     "jsdom": "^22.1.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.39",
     "postcss-modules": "^6.0.0",
-    "sass": "^1.63.6",
-    "tailwindcss": "^3.3.2",
+    "sass": "^1.77.6",
+    "tailwindcss": "^3.4.4",
     "tsup": "^7.1.0",
-    "tsup-preset-solid": "^2.0.1",
-    "typescript": "^5.1.6",
+    "tsup-preset-solid": "^2.2.0",
+    "typescript": "^5.5.3",
     "vite": "^4.4.6",
-    "vite-plugin-solid": "^2.7.0",
+    "vite-plugin-solid": "^2.10.2",
     "vitest": "^0.33.0"
   },
   "keywords": [

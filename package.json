@@ -5,7 +5,8 @@
   "author": "Umaĵo",
   "contributors": [],
   "files": [
-    "dist"
+    "lib.ts",
+    "src"
   ],
   "private": false,
   "sideEffects": false,

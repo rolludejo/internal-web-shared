@@ -1,6 +1,5 @@
 import { Component } from "solid-js";
 
-import "./App.css";
 import styles from "./App.module.css";
 
 import {

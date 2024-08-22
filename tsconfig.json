@@ -11,5 +11,5 @@
     "types": ["vite/client"],
     "baseUrl": "."
   },
-  "exclude": ["node_modules", "dist", "./dev"]
+  "exclude": ["node_modules", "./dev"]
 }

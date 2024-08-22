@@ -1,6 +1,5 @@
 .App {
-  @apply text-gray-300;
-
+  color: #d1d5db;
   background-color: #282c34;
   min-height: 100vh;
 }

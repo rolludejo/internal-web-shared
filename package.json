@@ -26,6 +26,12 @@
         "types": "./src/shadow-root/mod.ts",
         "default": "./src/shadow-root/mod.ts"
       }
+    },
+    "./styling": {
+      "import": {
+        "types": "./src/styling/mod.ts",
+        "default": "./src/styling/mod.ts"
+      }
     }
   },
   "scripts": {
@@ -39,6 +45,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "csstype": "^3.1.3",
     "typescript": "^5.5.3",
     "vite": "^5.3.3",
     "vite-plugin-solid": "^2.10.2"

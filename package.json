@@ -5,27 +5,26 @@
   "author": "Umaĵo",
   "contributors": [],
   "files": [
-    "lib.ts",
     "src"
   ],
   "private": false,
   "sideEffects": false,
   "type": "module",
-  "main": "./lib.ts",
-  "module": "./lib.ts",
-  "types": "./lib.ts",
+  "main": "./src/lib.ts",
+  "module": "./src/lib.ts",
+  "types": "./src/lib.ts",
   "browser": {},
   "exports": {
     ".": {
       "import": {
-        "types": "./lib.ts",
-        "default": "./lib.ts"
+        "types": "./src/lib.ts",
+        "default": "./src/lib.ts"
       }
     },
     "./shadow-root": {
       "import": {
-        "types": "./shadow-root/mod.ts",
-        "default": "./shadow-root/mod.ts"
+        "types": "./src/shadow-root/mod.ts",
+        "default": "./src/shadow-root/mod.ts"
       }
     }
   },

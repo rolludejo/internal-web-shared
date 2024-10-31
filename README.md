@@ -10,3 +10,20 @@
 
 - `packages/solid-components`（前者作为基础模板，以及将部分代码从前者转移至此。）
 - `internal/web-utils`（将部分代码从前者转移至此。）
+
+---
+
+如果要引入本包中涉及到 SolidJS 的功能（如 `ShadowRootAttacher`），需要配置
+Vite（于 `vite.config.ts`）：
+
+```typescript
+// …
+
+export default defineConfig({
+  // …
+  optimizeDeps: {
+    exclude: ["@rolludejo/internal-web-shared"],
+  },
+  // …
+});
+```

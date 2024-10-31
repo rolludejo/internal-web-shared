@@ -1,4 +1,4 @@
-# @rolludejo/web-internal
+# @rolludejo/internal-web-shared
 
 本 repo 主要容纳 rolludejo 的下属项目（如 dicexp、rotext）的共用代码。
 

@@ -42,6 +42,7 @@
     }
   },
   "scripts": {
+    "dev": "vite serve dev",
     "test": "vitest",
     "lint": "concurrently pnpm:lint:*",
     "lint:types": "tsc --noEmit",

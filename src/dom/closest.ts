@@ -12,7 +12,7 @@ export function findClosestElementEx(
   do {
     if (predicate(el)) return el;
     if (el.parentElement) {
-      if (el.slot && el.parentElement.shadowRoot) {
+      if (el.parentElement.shadowRoot) {
         const slotEls = el.parentElement.shadowRoot.querySelectorAll("slot");
         let hasFound = false;
         for (const slotEl of slotEls ?? []) {

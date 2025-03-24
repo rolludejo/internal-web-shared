@@ -77,7 +77,7 @@ describe("function findClosestElementEx", () => {
       .toBe(null);
   });
 
-  it("works inside and out of custom elements", () => {
+  it("works inside and out of custom elements with name slots", () => {
     customElement("custom-element", () => {
       return (
         <div id="x" class="X">
@@ -91,6 +91,40 @@ describe("function findClosestElementEx", () => {
       <div id="a" class="A">
         <custom-element>
           <div slot="children">
+            <div id="a-child" class="A_CHILD"></div>
+          </div>
+        </custom-element>
+      </div>
+    </div>
+    `;
+
+    const a = document.getElementById("a")!;
+    const aChild = document.getElementById("a-child")!;
+
+    expect(f(a, (el) => el.id === "a")?.className)
+      .toBe("A");
+    expect(f(aChild, (el) => el.id === "a")?.className)
+      .toBe("A");
+    expect(f(aChild, (el) => el.id === "x")?.className)
+      .toBe("X");
+    expect(f(aChild, (el) => el.id === "b"))
+      .toBe(null);
+  });
+
+  it("works inside and out of custom elements with unname slots", () => {
+    customElement("custom-element", () => {
+      return (
+        <div id="x" class="X">
+          <slot />
+        </div>
+      );
+    });
+
+    document.body.innerHTML = /*html*/ `
+    <div>
+      <div id="a" class="A">
+        <custom-element>
+          <div="children">
             <div id="a-child" class="A_CHILD"></div>
           </div>
         </custom-element>
